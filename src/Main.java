@@ -6,7 +6,7 @@ public class Main {
         Scanner in = new Scanner(System.in);
         String playerA;
         String playerB;
-        char playAgain;
+        String playAgain = "";
 
         do {
             do {
@@ -26,8 +26,8 @@ public class Main {
                 System.out.println("Player B wins");
             }
             System.out.println("Do you want to play again? (Y/N)");
-            playAgain = in.nextLine().toUpperCase().charAt(0);
-        }while (playAgain == 'Y');
+            playAgain=in.nextLine().toUpperCase();
+        }while (playAgain.equals("Y"));
 
         System.out.println("Thanks for playing");
         in.close();
